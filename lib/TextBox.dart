@@ -10,16 +10,17 @@ class TextBox1 extends StatelessWidget {
     return Center(
       child: ConstrainedBox(
         child: Container(
-          //height : 80,
+          height : 80,
           width: 400,
           decoration: BoxDecoration(
             color: Colors.orangeAccent,
             borderRadius: BorderRadius.all(Radius.circular(12)),
           ),
           child: Text(
+
             "Is the patient exposed to the specific allergen at the moment?",
             textAlign: TextAlign.center,
-            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+            style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 20),
           ),
         ),
 
