@@ -1,5 +1,6 @@
 import 'package:aaaa/Questions.dart';
 import 'package:aaaa/WaveClass.dart';
+import 'package:aaaa/start.dart';
 import 'package:flutter/material.dart';
 import 'package:getwidget/components/button/gf_button.dart';
 import 'package:getwidget/getwidget.dart';
@@ -7,6 +8,7 @@ import 'package:getwidget/getwidget.dart';
 
 void main() {
   runApp(const MyApp());
+
 }
 
 class MyApp extends StatelessWidget {
@@ -16,15 +18,15 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.blue
       ),
       home: Scaffold(
         body: Stack(
           children: const <Widget>[
-            WaveClass(),
-            QuestionPage()
+            //WaveClass(),
+            startpage(),
+            //QuestionPage()
           ],
         )
       ),

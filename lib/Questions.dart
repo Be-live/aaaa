@@ -10,11 +10,12 @@ class QuestionPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
         children: [
+          Image.asset('Questionbox.png'),
           TextBox1(),
           Center(
       child: ConstrainedBox(
         constraints: const BoxConstraints(
-          minWidth: 300.0, //최소값으로 설정하는게 맞음 >> 아이패드나 컴퓨터로 보면 늘어나야함
+          minWidth: 300.0,
         ),
         child: Column(
           mainAxisSize: MainAxisSize.min,
